@@ -1,0 +1,108 @@
+.MoviesCard {
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.05);
+    color: #FFFFFF;
+}
+
+.MoviesCard__image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+   
+}
+
+.MoviesCard__contanier {
+    justify-content: space-between;
+    margin: 14px 12px 10px;
+    display: flex;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+
+.MoviesCard__name {
+    margin: 0;
+    font-weight: 500;
+    line-height: normal;
+    white-space: nowrap;
+    max-width: 206px;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.MoviesCard__duration {
+    margin: 0 0 12px 14px;
+    text-align: start;
+    font-size: 11px;
+    color: #A0A0A0;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.MoviesCard__save {
+    width: 16px;
+    height: 16px;
+    background: #F4F4F4;
+    border-radius: 50%;
+    box-shadow: 0px 2px 12px 2px rgba(128, 128, 128, 0.2);
+    cursor: pointer;
+    border: 2px solid #FFFFFF;
+}
+
+.MoviesCard__saved{
+    width: 16px;
+    height: 16px;
+    background: #2BE080;
+    border-radius: 50%;
+    box-shadow: 0px 2px 12px 2px rgba(128, 128, 128, 0.2);
+    cursor: pointer;
+    border: 2px solid #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    .MoviesCard {
+      max-width: 339px;
+    }
+  
+    .MoviesCard__image {
+      height: 190px;
+    }
+  
+    .MoviesCard__container {
+      margin-top: 20px;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 555px) {
+    .MoviesCard {
+      max-width: 300px;
+    }
+  
+    .MoviesCard__image {
+      height: 168px;
+    }
+  
+    .MoviesCard__button {
+      top: 10px;
+      right: 10px;
+    }
+  
+    .MoviesCard__container {
+      margin-top: 12px;
+    }
+  
+    .MoviesCard__duration {
+      padding-top: 5px;
+      padding-right: 9px;
+      padding-left: 9px;
+    }
+  
+    .MoviesCard__name {
+      font-size: 12px;
+    }
+  }

@@ -1,0 +1,11 @@
+.App {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #202020;
+  -webkit-font-smooting: antialiased;
+  -webkit-text-size-adjust: 100%;
+
+  font-family: "Inter", "Arial", sans-serif;
+  min-height: 100vh;
+}

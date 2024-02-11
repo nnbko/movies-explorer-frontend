@@ -1,0 +1,75 @@
+.Checkbox {
+    display: flex;
+    align-self: flex-start;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 0 70px;
+}
+
+.Checkbox__switch {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 16px 0 14px;
+}
+
+.Checkbox__input {
+    position: relative;
+    appearance: none;
+    width: 36px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+
+.Checkbox__input::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s all ease;
+}
+
+.Checkbox__input:checked::before {
+    left: 20px;
+}
+
+.Checkbox__input:checked {
+    background-color: #2be080;
+    transition: 0.3s all ease;
+}
+
+@media screen and (max-width: 768px) {
+    .Checkbox {
+        flex-direction: row-reverse;
+        padding: 0 30px 60px 0;
+    }
+
+    .Checkbox__label {
+        line-height: 1.29;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .Checkbox {
+        padding: 41px 86px 51px 86px;
+        
+    }
+
+    .Checkbox__switch {
+        font-size: 11px;
+        line-height: 1.64;
+        padding: 0 13px 0 0px;
+    }
+}
