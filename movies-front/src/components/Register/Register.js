@@ -1,3 +1,4 @@
+import logo from '../../images/logo2.svg'
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -8,6 +9,7 @@ export default function Register() {
                 <Link className="Register__link" to="/">
                     <img className="Register__logo"
                         alt="лого"
+                        src={logo}
                     ></img>
                 </Link>
                 <h1 className="Register__title">Добро пожаловать!</h1>
@@ -23,12 +25,12 @@ export default function Register() {
                     <input className="Register__input Register__input-error" placeholder="Пароль" required>
                     </input>
                     <span className="Register__error">Что-то пошло не так</span>
-                    <button className="Register__smb"> Редактировать</button>
+                    <button className="Register__smb" type="submit">Зарегистрироваться</button>
                     <div className="Register__question">
                         <p className="Register__text">
                             Уже зарегистрированы?
                         </p>
-                        <button className="Register__logout">Войти</button>
+                        <Link className="Register__logout" to="/signin">Войти</Link>
                     </div>
                 </form>
             </div>

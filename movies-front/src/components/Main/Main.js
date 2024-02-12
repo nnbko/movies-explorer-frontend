@@ -10,13 +10,15 @@ import Header from '../Header/Header'
 function Main() {
     return (
         <>
-            <Header isLoggedIn={true} />
-            <Promo />
-            <NavTab />
-            <Aboutproject />
-            <Techs />
-            <AboutMe />
-            <Portfolio />
+            <Header isLoggedIn={false} />
+            <main className="main__contanier">
+                <Promo />
+                <NavTab />
+                <Aboutproject />
+                <Techs />
+                <AboutMe />
+                <Portfolio />
+            </main>
             <Footer />
         </>
     );

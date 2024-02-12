@@ -1,57 +1,85 @@
 .MoviesCards {
-    padding: 80px 70px 0;
-    box-sizing: border-box;
-    text-align: center;
+  padding: 0px 70px 0;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .MoviesCards__cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 55px 30px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  width: 100%;
+  margin: 0;
+  padding: 80px 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 34px 20px;
+  list-style-type: none;
 }
 
 .MoviesCards__more {
-    margin: 76px auto 0;
-    padding: 0;
-    width: 320px;
-    height: 36px;
-    flex-shrink: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    background: transparent;
-    border-radius: 6px;
-    border: 1px solid #424242;
+  margin: 76px 0 165px;
+  padding: 0;
+  width: 320px;
+  height: 36px;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: transparent;
+  border-radius: 6px;
+  border: 1px solid #424242;
 }
 
-@media screen and (max-width: 660px) {
-    .MoviesCards {
-      max-width: fit-content;
-      padding-left: 0;
-      padding-right: 0;
-      margin: 0 auto;
-    }
+@media screen and (max-width: 1100px) {
+  .MoviesCards__cards {
+    width: 92%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 39px 30px;
+
   }
-  
-  @media screen and (max-width: 555px) {
-    .MoviesCards {
-      padding-top: 50px;
-      max-width: fit-content;
-    }
-  
-    .MoviesCards__cards {
-      padding-bottom: 26px;
-      gap: 35px 0;
-    }
-  
-    .MoviesCards__more {
-      width: 240px;
-      margin-top: 60px;
-    }
+}
+
+
+@media screen and (max-width: 820px) {
+  .MoviesCards__cards {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 20px;
   }
+
+  .MoviesCards {
+    padding: 0px 30px 0;
+  }
+
+  .MoviesCards__more {
+    margin: 50px 0 150px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .MoviesCards__cards {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 339px));
+    gap: 23px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .MoviesCards__cards {
+    width: 100%;
+    padding: 51px 0 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .MoviesCards__more {
+    margin: 60px 0 80px;
+  }
+  .MoviesCards {
+    padding: 0px 10px 0;
+  }
+  .MoviesCards__more {
+
+    max-width: 240px;
+  }
+}

@@ -19,7 +19,7 @@ export default function Portfolio() {
                         href="https://github.com/nnbko/mesto"
                         target="_blank"
                         rel="noreferrer"
-                    >Адаптивынй сайт
+                    >Адаптивный сайт
                         <img className="portfolio__img"
                             src={arrow}
                             alt="стрелка"

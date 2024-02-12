@@ -5,9 +5,11 @@ import Footer from '../Footer/Footer';
 export default function SavedMovies() {
     return (
         <>
-            <Header black/>
-            <SearchForm />
-            <MoviesCardList />
+            <Header black />
+            <main className="saved__contanier">
+                <SearchForm />
+                <MoviesCardList />
+            </main>
             <Footer />
         </>
     )

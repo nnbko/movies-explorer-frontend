@@ -4,9 +4,9 @@ export default function MoviesCardlist() {
     return (
         <section className="MoviesCards">
             <ul className='MoviesCards__cards'>
-            <MoviesCard/>
+                <MoviesCard />
             </ul>
-            <button type="button" className="MoviesCards__more">
+            <button type="button" className="MoviesCards__more" type="button">
                 Ещё
             </button>
         </section>

@@ -1,7 +1,6 @@
 export default function FilterCheckbox() {
     return (
-        <form className="Checkbox">
-
+        <div className="Checkbox">
             <input
                 className="Checkbox__input"
                 type="checkbox"
@@ -9,6 +8,6 @@ export default function FilterCheckbox() {
             <label className="Checkbox__switch">
                 Короткометражки
             </label>
-        </form>
+        </div>
     )
 }
