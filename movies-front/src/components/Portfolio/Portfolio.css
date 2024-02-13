@@ -54,12 +54,13 @@
 
 @media screen and (max-width: 768px) {
   .portfolio {
-    padding: 90px 50px;
+    padding: 77px 50px 40px 50px;
   }
 
   .portfolio__links {
     grid-template-columns: 386px 27px;
     column-gap: 255px;
+    margin: 25px 0 105px 0;
   }
 
   .portfolio__text {
@@ -74,8 +75,7 @@
 
 @media screen and (max-width: 320px) {
   .portfolio {
-    padding: 0 14px 70px 14px;
-    gap: 40px;
+    padding: 0 14px 0px 14px;
   }
 
   .portfolio__title {
@@ -85,12 +85,14 @@
   .portfolio__links {
     grid-template-columns: 250px 18px;
     column-gap: 24px;
+    margin: 25px 0 124px 0;
   }
 
   .portfolio__text {
     width: 292px;
     font-size: 18px;
     letter-spacing: -0.72px;
+    padding: 15px 0 6px 0;
   }
 
   .portfolio__img {
