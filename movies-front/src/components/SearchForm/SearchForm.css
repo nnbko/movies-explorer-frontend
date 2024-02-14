@@ -38,6 +38,10 @@
     outline: 0;
 }
 
+.SearchForm__input:focus {
+    outline: 1px solid #4285F4;
+}
+
 .SearchForm__button {
     background: url("../../images/find.svg");
     width: 34px;

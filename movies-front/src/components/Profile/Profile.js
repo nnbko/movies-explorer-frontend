@@ -9,16 +9,24 @@ export default function Profile() {
                 <form className="Profile__form">
                     <fieldset className="Profile__fieldset Profile__fieldset-underline">
                         <label className="Profile__lable">Имя</label>
-                        <input className="Profile__input" placeholder="Имя" required>
+                        <input placeholder="Имя" className="Profile__input"
+                            required
+                            type="text"
+                            name="name"
+                            minLength={2}
+                            maxLength={30}>
                         </input>
                     </fieldset>
                     <fieldset className="Profile__fieldset">
                         <label className="Profile__lable">E-mail</label>
-                        <input className="Profile__input" placeholder="E-mail" required>
+                        <input placeholder="Email" className="Profile__input"
+                            required
+                            name="email"
+                            type="email">
                         </input >
                     </fieldset>
                     <div className="button">
-                        <button className="Profile__button profile__button-edit"   type="submit"> Редактировать</button>
+                        <button className="Profile__button profile__button-edit" type="submit"> Редактировать</button>
                         <Link className="Profile__button profile__button-signout" to="/" >Выйти из аккаунта</Link>
                     </div>
                 </form>

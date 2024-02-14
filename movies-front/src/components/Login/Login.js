@@ -12,10 +12,20 @@ export default function Login() {
                 <h1 className="Login__title">Добро пожаловать!</h1>
                 <form className="Login__form">
                     <label className="Login__lable">E-mail</label>
-                    <input className="Login__input" placeholder="E-mail" required>
+                    <input className="Login__input" placeholder="E-mail"
+                        required
+                        type="email"
+                        name="email"
+                        minLength={2}
+                        maxLength={30}
+                    >
                     </input>
                     <label className="Login__lable">Пароль</label>
-                    <input className="Login__input" placeholder="Пароль" required>
+                    <input className="Login__input" placeholder="Пароль"
+                        required
+                        minLength={2}
+                        maxLength={20}
+                    >
                     </input>
                     <button className="Login__smb" type="submit">Войти</button>
                     <div className="Login__question">

@@ -16,13 +16,29 @@ export default function Register() {
 
                 <form className="Register__form">
                     <label className="Register__lable">Имя</label>
-                    <input className="Register__input" placeholder="Имя" required>
+                    <input className="Register__input"
+                        placeholder="Имя"
+                        required
+                        type="text"
+                        name="name"
+                        minLength={2}
+                        maxLength={30}>
                     </input>
                     <label className="Register__lable">E-mail</label>
-                    <input className="Register__input" placeholder="E-mail" required>
+                    <input className="Register__input" placeholder="E-mail"
+                        required
+                        type="email"
+                        name="email"
+                        minLength={2}
+                        maxLength={30}
+                    >
                     </input>
                     <label className="Register__lable">Пароль</label>
-                    <input className="Register__input Register__input-error" placeholder="Пароль" required>
+                    <input className="Register__input Register__input-error" placeholder="Пароль"
+                        required
+                        minLength={2}
+                        maxLength={20}
+                    >
                     </input>
                     <span className="Register__error">Что-то пошло не так</span>
                     <button className="Register__smb" type="submit">Зарегистрироваться</button>

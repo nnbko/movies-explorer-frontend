@@ -63,6 +63,10 @@
     box-sizing: border-box;
 }
 
+.Login__input:focus {
+    outline: 1px solid #4285F4;
+}
+
 .Login__smb {
     width: 100%;
     padding: 13px 0 15px 0;

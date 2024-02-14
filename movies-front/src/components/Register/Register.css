@@ -63,6 +63,10 @@
     box-sizing: border-box;
 }
 
+.Register__input:focus {
+    outline: 1px solid #4285F4;
+}
+
 .Register__input-error {
     margin-bottom: 10px;
     color: #ee3465;
@@ -163,11 +167,12 @@
         margin-top: 14px;
         gap: 7px;
     }
+
     .Register__text {
         font-size: 12px;
-      }
-    
-      .Register__logout {
+    }
+
+    .Register__logout {
         font-size: 12px;
-      }
+    }
 }
