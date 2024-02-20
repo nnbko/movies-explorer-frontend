@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 import accLogo from "../../images/mini-acc.svg"
 
 
-export default function BurgerMenu({ onClick, isOpen }) {
+export default function BurgerMenu({ onClick, isOpen, onClose}) {
     return (
         <section className="burger">
             <div className="header_nav-burger" onClick={() => onClick()}></div>
             <nav className={`burger__contanier  ${isOpen ? "burger__visible" : ""}`}>
                 <div className="burger__open">
                     <ul className='burger__links'>
-                        <li className='burger__link'><button className='burger__close'></button>
+                        <li className='burger__link'><button className='burger__close'  onClick={() => onClick()} ></button>
                         </li>
                         <li className='burger__link'>
-                            <Link className='burger__nav_link' to="/movies">Главная</Link>
+                            <Link className='burger__nav_link' to="/">Главная</Link>
                         </li>
                         <li className='burger__link'>
                             <Link className='burger__nav_link' to="/movies">Фильмы</Link>

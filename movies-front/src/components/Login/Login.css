@@ -114,6 +114,27 @@
     background: none;
 }
 
+.Login__input-error {
+    margin-bottom: 10px;
+    color: #ee3465;
+}
+
+.Login__error {
+    color: #ee3465;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    font-size: 10px;
+}
+
+.Login__smb_disabled {
+    opacity: 0.3;
+    pointer-events: none;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+}
 
 @media screen and (max-width: 768px) {
     .Login__contanier {

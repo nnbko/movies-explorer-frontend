@@ -59,6 +59,22 @@
     opacity: 80%;
 }
 
+.search-form__error {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.form__error_active {
+    color: #ee3465;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    font-size: 10px;
+}
+
+
 @media screen and (max-width: 900px) {
 
     .SearchForm__button {

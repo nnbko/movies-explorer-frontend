@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from '../../images/logo.svg';
 import Navigation from '../Navigation/Navigation'
-export default function Header({ isLoggedIn, black }) {
+export default function Header({loggedIn, black }) {
     return (
         <header className={`header ${black ? "header__black-background" : ""} `}>
             <Link className="header__link" to="/">
@@ -11,10 +11,10 @@ export default function Header({ isLoggedIn, black }) {
                     alt="лого"
                 />
             </Link>
-            {isLoggedIn ? (
+            {loggedIn ? (
                 <>
                     <div className="header__navigation">
-                        <Navigation />
+                        <Navigation/>
                     </div>
                 </>
             ) : (

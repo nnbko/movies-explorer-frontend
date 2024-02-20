@@ -98,6 +98,14 @@
 
 }
 
+.Register__smb_disabled {
+    opacity: 0.3;
+    pointer-events: none;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
 .Register__question {
     display: flex;
     justify-content: center;
@@ -129,6 +137,20 @@
     border: none;
     background: none;
 }
+
+.Register__warning {
+    visibility: hidden;
+    margin: 0 auto 0 auto;
+    color: rgba(255, 0, 76, 1);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13.34px;
+}
+
+.Register__warning_active {
+    visibility: visible;
+}
+    
 
 @media screen and (max-width: 768px) {
     .Register__contanier {

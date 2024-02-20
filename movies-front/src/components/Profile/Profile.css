@@ -105,10 +105,44 @@
     text-decoration: none;
 }
 
+.profile__error {
+    color: #ee3465;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    font-size: 10px;
+}
+
+.profile__save-button {
+    margin: 0 0 17px 0;
+    padding: 0;
+    width: 100%;
+    min-height: 45px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(66, 133, 244, 1);
+    border: none;
+    border-radius: 3px;
+}
+.profile__save-button_disabled{
+    color: rgba(194, 194, 194, 1);
+    background-color: rgba(248, 248, 248, 1);
+}
+.profile__success {
+    color: rgba(255, 255, 255, 1);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    font-size: 10px;
+  }
 
 @media screen and (max-width: 768px) {
     .Profile {
-        padding: 230px 179px 269px 179px;   
+        padding: 230px 179px 269px 179px;
     }
 
     .Profile__form {
@@ -118,7 +152,7 @@
 
 @media screen and (max-width: 555px) {
     .Profile {
-        
+
         padding: 70px 50px 0;
     }
 
@@ -130,12 +164,14 @@
     .Profile__button {
         font-size: 12px;
         margin: 0;
-        
+
     }
-    .button{
+
+    .button {
         margin: 0px;
         padding: 379px 0px 40px;
     }
+
     .Profile__button-edit {
         margin: 0;
         padding: 0;

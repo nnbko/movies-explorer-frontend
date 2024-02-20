@@ -63,6 +63,23 @@
   border: 2px solid #FFFFFF;
 }
 
+.movie__button-save-close {
+  background: initial;
+  background-image: url("../../images/delete_button.svg");
+  height: 16px;
+  cursor: pointer;
+  padding: 0;
+  background-position: center;
+  border: none;
+  width: 16px;
+  box-shadow: none;
+}
+
+.movie__button-save-close:hover {
+  opacity: .7;
+  transition: ease-out 0.2s;
+}
+
 @media screen and (max-width: 768px) {
   .MoviesCard {
     max-width: 339px;

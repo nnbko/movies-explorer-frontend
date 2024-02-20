@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import accLogo from "../../images/mini-acc.svg"
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 export default function Navigation() {
-
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
     return (
         <>
-            <BurgerMenu onClick={toggleMenu} isOpen={isOpen} />
+            <BurgerMenu onClick={toggleMenu} isOpen={isOpen}/>
             <nav>
                 <div className='header_nav_buttons'>
                     <Link className='header__nav_button' to="/movies">Фильмы</Link>
