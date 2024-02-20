@@ -6,7 +6,7 @@ https://nnbkodip.nomoredomainswork.ru
 
 
 # Ссылка на пул реквест:
-
+https://github.com/nnbko/movies-explorer-frontend/pull/2
 
 # Getting Started with Create React App
 
