@@ -112,9 +112,9 @@ class MainApi {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
                 authorization: `Bearer ${token}`
-            } 
+            }
         })
-        .then(this._getData)
+            .then(this._getData)
     }
 
 }

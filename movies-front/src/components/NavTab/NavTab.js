@@ -1,12 +1,13 @@
 import React from "react";
 
+import { HashLink } from "react-router-hash-link";
+
 export default function NavTab() {
     return (
         <section className="navtab">
-            <button className="navtab__button"  type="button">
-                <a  href="#aboutProject" className="navtab__button-link">
+                <HashLink  smooth to="#aboutProject" className="navtab__button-link">
                     Узнать больше
-                </a></button>
+                </HashLink>
         </section>
     )
 }

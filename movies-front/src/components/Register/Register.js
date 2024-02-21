@@ -1,11 +1,11 @@
 import logo from '../../images/logo2.svg'
 import React from "react";
-import {useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Validation from "../../hooks/validate";
+import useValidation from "../../hooks/useValidation";
 
-export default function Register({ onRegister}) {
-    const { values, handleChange, errors, isValid, resetForm } = Validation();
+export default function Register({ onRegister }) {
+    const { values, handleChange, errors, isValid, resetForm } = useValidation();
 
     useEffect(() => {
         resetForm();
@@ -60,7 +60,9 @@ export default function Register({ onRegister}) {
                     </input>
                     <span className="Register__error">{errors.email}</span>
                     <label className="Register__lable">Пароль</label>
-                    <input className={`Register__input ${errors.password ? 'Register__input-error' : ' '}`} placeholder="Пароль"
+                    <input className={`Register__input ${errors.password ? 'Register__input-error' : ' '}`}
+                        placeholder="Пароль"
+                        type="password"
                         minLength="5"
                         maxLength="30"
                         value={values.password || ""}

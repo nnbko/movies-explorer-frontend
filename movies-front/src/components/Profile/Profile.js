@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import Header from '../Header/Header'
 import { CurrentUserContext } from "../../contexts/CurrentUserContext"
-import Validation from "../../hooks/validate";
+import useValidation from "../../hooks/useValidation";
 export default function Profile({ signOut, handleUpdateUser, setIsSuccess, isSuccess, loggedIn }) {
 
-    const { values, handleChange, errors, isValid, resetForm } = Validation();
+    const { values, handleChange, errors, isValid, resetForm } = useValidation();
     const currentUser = useContext(CurrentUserContext);
     const { email, name } = values;
     const [isDisabled, setIsDisabled] = useState(false);
@@ -63,6 +63,7 @@ export default function Profile({ signOut, handleUpdateUser, setIsSuccess, isSuc
                             id="email"
                             type="email"
                             placeholder={currentUser.email}
+                            value={values.email || ''}
                             name="email"
                             className="Profile__input"
                             onChange={handleChange}
@@ -79,7 +80,7 @@ export default function Profile({ signOut, handleUpdateUser, setIsSuccess, isSuc
                         <div className="profile__save">
                             <button
                                 type="submit"
-                                className={`profile__save-button ${!isValid ? "profile__save-button_disabled" : ''}`}
+                                className={`profile__save-button ${!isValid || !isDisabled ? "profile__save-button_disabled" : ''}`}
                                 disabled={!isValid || !isDisabled}
                             >
                                 Сохранить

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { screen_size_S, screen_size_M, screen_size_B} from "./Constants";
+import { Screen_size_S, Screen_size_M, Screen_size_B} from "./Constants";
 
 export function durationToHours(duration = 100) {
   const hours = Math.floor(duration / 60);
@@ -22,9 +22,9 @@ export const useResize = () => {
 
   return {
       width,
-      isScreenSm: width >= screen_size_S,
-      isScreenLg: width >= screen_size_M,
-      isScreenXl: width >= screen_size_B,
+      isScreenSm: width >= Screen_size_S,
+      isScreenLg: width >= Screen_size_M,
+      isScreenXl: width >= Screen_size_B,
 
   };
 };

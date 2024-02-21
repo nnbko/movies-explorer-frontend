@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
 import { CurrentUserContext } from '../../contexts/CurrentUserContext';
 import Profile from '../Profile/Profile'
 import Register from '../Register/Register'
@@ -19,6 +19,7 @@ function App() {
   const [currentUser, setCurrentUser] = useState({});
   const [savedMovies, setSavedMovies] = useState([]);
   const [isSuccess, setIsSuccess] = useState("");
+
 
   useEffect(() => {
     if (loggedIn) {
@@ -45,8 +46,6 @@ function App() {
         .catch(err => console.log(`Ошибка в токене ${err}`))
     }
   }, [])
-
-
   function handleLogin(email, password) {
     MainApi
       .authorize(email, password)
@@ -107,7 +106,6 @@ function App() {
       })
       .catch((error) => console.error(`Ошибка удаления ${error}`));
   }
-
 
   function handleSaveSubmit(data) {
     MainApi

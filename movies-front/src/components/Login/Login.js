@@ -1,10 +1,10 @@
 import logo from '../../images/logo2.svg'
 import { Link } from "react-router-dom";
-import {useEffect } from "react";
-import Validation from "../../hooks/validate";
+import { useEffect } from "react";
+import useValidation from "../../hooks/useValidation";
 
 export default function Login({ onLogin, isWarning, checkedLoggedIn, setIsWarning, isFetching }) {
-    const { values, handleChange, errors, isValid, resetForm } = Validation();
+    const { values, handleChange, errors, isValid, resetForm } = useValidation();
 
     useEffect(() => {
         resetForm();
@@ -22,7 +22,7 @@ export default function Login({ onLogin, isWarning, checkedLoggedIn, setIsWarnin
     return (
         <main className="Login">
             <div className="Login__contanier">
-            <Link className="Login__link" to="/">
+                <Link className="Login__link" to="/">
                     <img className="Login__logo"
                         alt="лого"
                         src={logo}
@@ -44,7 +44,9 @@ export default function Login({ onLogin, isWarning, checkedLoggedIn, setIsWarnin
                     </input>
                     <span className="Login__error">{errors.email}</span>
                     <label className="Login__lable">Пароль</label>
-                    <input className={`Login__input ${errors.password ? 'Login__input-error' : ' '}`} placeholder="Пароль"
+                    <input className={`Login__input ${errors.password ? 'Login__input-error' : ' '}`}
+                        placeholder="Пароль"
+                        type="password"
                         required
                         onChange={handleChange}
                         value={values.password || ""}

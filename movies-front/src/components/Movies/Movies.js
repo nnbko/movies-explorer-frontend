@@ -4,7 +4,7 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer';
 import { useState, useEffect } from 'react'
 import MoviesApi from "../../utils/MoviesApi";
-import { short_Films } from '../../utils/Constants';
+import { Short_Films } from '../../utils/Constants';
 
 export default function Movies(
     {
@@ -30,7 +30,7 @@ export default function Movies(
         setFilterMovies(allmovies.filter((movie) => {
             const searchName = movie.nameRU.toLowerCase().includes(search.toLowerCase()) ||
                 movie.nameEN.toLowerCase().includes(search.toLowerCase());
-            return isCheck ? (searchName && movie.duration <= short_Films) : searchName
+            return isCheck ? (searchName && movie.duration <= Short_Films) : searchName
         }))
     })
 
