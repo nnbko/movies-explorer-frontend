@@ -1,0 +1,180 @@
+.Profile {
+    padding: 74px 0 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.Profile__title {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.Profile__form {
+    max-width: 410px;
+    width: 100%;
+    margin: 123px 0 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.Profile__fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Profile__fieldset-underline {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #424242;
+}
+
+.Profile__lable {
+    color: #fff;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Profile__input {
+    color: #fff;
+    text-align: right;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(32, 32, 32, 1);
+}
+
+.Profile__button {
+    color: #fff;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    background: none;
+    max-width: fit-content;
+}
+
+.profile__button-edit {
+    width: 410px;
+    margin: 204px 0 0 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    transition: opacity 0.35s linear;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.profile__button-signout {
+    width: 410px;
+    padding: 16px 0 0px 0;
+    border: none;
+    background: none;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    transition: opacity 0.35s linear;
+    cursor: pointer;
+    color: #ee3465;
+    text-decoration: none;
+}
+
+.profile__error {
+    color: #ee3465;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    font-size: 10px;
+}
+
+.profile__save-button {
+    margin: 0 0 17px 0;
+    padding: 0;
+    width: 100%;
+    min-height: 45px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(66, 133, 244, 1);
+    border: none;
+    border-radius: 3px;
+}
+.profile__save-button_disabled{
+    color: rgba(194, 194, 194, 1);
+    background-color: rgba(248, 248, 248, 1);
+}
+.profile__success {
+    color: rgba(255, 255, 255, 1);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    font-size: 10px;
+  }
+
+@media screen and (max-width: 768px) {
+    .Profile {
+        padding: 230px 179px 269px 179px;
+    }
+
+    .Profile__form {
+        margin: 96px 0 0px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .Profile {
+
+        padding: 70px 50px 0;
+    }
+
+    .Profile__form {
+        max-width: 260px;
+        margin: 80px 0 0px;
+    }
+
+    .Profile__button {
+        font-size: 12px;
+        margin: 0;
+
+    }
+
+    .button {
+        margin: 0px;
+        padding: 379px 0px 40px;
+    }
+
+    .Profile__button-edit {
+        margin: 0;
+        padding: 0;
+    }
+
+}
