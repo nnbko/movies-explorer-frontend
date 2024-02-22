@@ -5,13 +5,16 @@
 }
 
 .MoviesCards__cards {
-  width: 100%;
-  margin: 0;
-  padding: 80px 0 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 34px 20px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: space-evenly;
+  align-items: stretch;
+  justify-items: stretch;
+  column-gap: 29px;
+  row-gap: 32px;
 }
 
 .MoviesCards__more {
@@ -41,25 +44,23 @@
 }
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 768px) {
   .MoviesCards__cards {
-    width: 92%;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 39px 30px;
-
+    margin: 2px 30px 60px 30px;
   }
 }
 
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 320px) {
   .MoviesCards__cards {
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 36px 20px;
+    column-gap: 24px;
+    row-gap: 33px;
+
   }
 
   .MoviesCards {
-    padding: 47px 30px 0;
+    margin: 2px 30px 60px 30px;
+    padding:0;
   }
 
   .MoviesCards__more {
@@ -69,31 +70,11 @@
 
 @media screen and (max-width: 570px) {
   .MoviesCards__cards {
-    width: 100%;
-    grid-template-columns: repeat(2, minmax(0, 339px));
-    gap: 23px;
-  }
-
-  .MoviesCards__more {
-
-    max-width: 240px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .MoviesCards__cards {
-    width: 100%;
-    ;
-    padding: 39px 0 0;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .MoviesCards__more {
-    margin: 60px 0 80px;
+    row-gap: 15px;
   }
 
   .MoviesCards {
-    padding: 0px 10px 0;
+    margin: 2px 30px 60px 30px;
   }
 
   .MoviesCards__more {
@@ -101,3 +82,4 @@
     max-width: 240px;
   }
 }
+
