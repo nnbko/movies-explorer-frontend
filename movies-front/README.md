@@ -1,6 +1,6 @@
 # Movies-explorer-frontend
 
-![Скриншот главной страницы]((https://github.com/{username}/{repository}/raw/{branch}/{path}/)photo_2024-05-15_16-26-52.jpg?raw=true))
+![Скриншот главной страницы](https://github.com/nnbko/movies-explorer-frontend/blob/main/movies-front/src/images/photo_2024-05-15_16-26-52.jpg)
 
 ## Фронтенд дипломной работы на курсе "Веб-разработчик" в [Яндекс Практикум](https://practicum.yandex.ru/)
 
