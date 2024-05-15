@@ -1,80 +1,51 @@
-Макет Dark5: https://www.figma.com/file/6FMWkB94wE7KTkcCgUXtnC/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D0%B9-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82?type=design&node-id=1-3992&mode=design&t=9sHJn1GndUHIfNHT-0
+# Movies-explorer-frontend
 
-# Ссылка на проект: 
+![Скриншот главной страницы](/src/images/photo_2024-05-15_16-26-52.jpg)
 
-https://nnbkodip.nomoredomainswork.ru
+## Фронтенд дипломной работы на курсе "Веб-разработчик" в [Яндекс Практикум](https://practicum.yandex.ru/)
 
+## Описание проекта
 
-# Ссылка на пул реквест:
-https://github.com/nnbko/movies-explorer-frontend/pull/2
+Фронтенд-часть проекта **Movies-explorer**, который представляет собой лендинг, содержащий портфолио разработчика, страницу поиска фильмов, страницу сохранённых фильмов, а также страницы регистрации, авторизации и профиля пользователя.
 
-# Getting Started with Create React App
+## Функционал
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. **Пользователи**
 
-## Available Scripts
+- регистрация
+- авторизация
+- редактирвание профиля
+- валидация форм регистрации, авторизации и редактирования профиля
+- выход из аккаунта
 
-In the project directory, you can run:
+2. **Фильмы**
 
-### `npm start`
+- поиск фильмов по базе данных
+- валидация формы поиска фильмов
+- фильтр короткометражных фильмов
+- кнопка "Ещё" на странице "Фильмы"
+- сохранение и восстановление параметров и результатов предыдущего поиска - текст запроса, состояние переключателя короткометражек, найденные фильмы
+- изменение количества карточек на странице в зависимости от ширины экрана устройства
+- добавлеие фильмов в "Сохранённые" (постановка лайка на карточку)
+- удалеие фильмов из "Сохранённых" (удаление лайка с карточки)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Стек технологий
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="html5" alt="html5" width="40" height="40"/>&nbsp
+  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" title="css" alt="css" width="40" height="40"/>&nbsp
+  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="javascript" alt="javascript" width="40" height="40"/>&nbsp
+  <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title="reactjs" alt="reactjs" width="40" height="40"/>&nbsp
+  <img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" title="figma" alt="figma" width="40" height="40"/>&nbsp
+  <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="vs-code" alt="vs-code" width="40" height="40"/>&nbsp
+  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" title="git" alt="git" width="40" height="40"/>&nbsp
 
-### `npm test`
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Инструкция по использованию проекта
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `git clone https://github.com/nnbko/movies-explorer-frontend.git` - клонирование репозитория с кодом проекта
+- `cd movies-explorer-frontend` - перейти в папку с проектом
+- `npm install` - установка зависимостей проекта
+- `npm start` - сборка проекта в режиме разработки
+- `npm run build` - сборка проекта в продакшн-режиме
